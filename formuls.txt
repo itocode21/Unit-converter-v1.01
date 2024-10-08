@@ -1,0 +1,16 @@
+metr --> centimeter = metr * 100
+metr --> milimetr = metr * 1000
+metr --> kilometr = metr / 1000
+metr --> inch = metr * 39.37
+metr --> foot = metr * 3.28084
+metr --> yard = metr * 1.093613
+metr --> mile = metr * 0.000621
+-------------------------------------------------
+centimeter --> metr = centimeter / 100
+centimeter --> milimetr = centimeter * 10
+centimeter --> kilometr = centimeter / 100 000
+centimeter --> inch = centimeter * 0.39
+centimeter --> foot = centimeter *  0.0328
+centimeter --> yard = centimeter * 0.010936
+centimeter --> mile = centimeter * 6.2137Е-6
+-------------------------------------------------
