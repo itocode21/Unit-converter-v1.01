@@ -98,42 +98,6 @@
 	</div>
 	
     <script>
-        function convertTemperature() {
-            let value = parseFloat(document.getElementById('input-value').value);
-            let fromUnit = document.getElementById('input-unit').value;
-            let toUnit = document.getElementById('output-unit').value;
-            let result;
-    
-            if (isNaN(value)) {
-                document.getElementById('result').innerText = 'Please enter a valid number';
-                return;
-            }
-    
-            switch (fromUnit + ' to ' + toUnit) {
-                case 'celsius to fahrenheit':
-                    result = (value * 9/5) + 32;
-                    break;
-                case 'celsius to kelvin':
-                    result = value + 273.15;
-                    break;
-                case 'fahrenheit to celsius':
-                    result = (value - 32) * 5/9;
-                    break;
-                case 'fahrenheit to kelvin':
-                    result = (value - 32) * 5/9 + 273.15;
-                    break;
-                case 'kelvin to celsius':
-                    result = value - 273.15;
-                    break;
-                case 'kelvin to fahrenheit':
-                    result = (value - 273.15) * 9/5 + 32;
-                    break;
-                default:
-                    result = value; // Если единицы измерения совпадают
-            }
-    
-            document.getElementById('result').innerText = 'Result: ' + result.toFixed(2);
-        }
     </script>
 </body>
 </html>
