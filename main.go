@@ -21,6 +21,16 @@ func convertTempe(value float64, fromUnit, toUnit string) (float64, error) {
 		return (value*(9/5) + 32), nil
 	case "celsius to celsius":
 		return value, nil
+	case "kelvin to celsius":
+		return (value - 273), nil
+	case "kelvin to fahrenheit":
+		return (9*(value-273.15)/5 + 32), nil
+	case "kelvin to kelvin":
+		return value, nil
+	case "fahrenheit to celsius":
+		return 5 * (value - 32) / 9, nil
+	case "fahrenheit to kelvin":
+		return (5*(value-32)/9 + 273.15), nil
 	default:
 		return value, fmt.Errorf("not supporte from %s to %s", fromUnit, toUnit)
 	}
